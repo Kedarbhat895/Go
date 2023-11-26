@@ -2,8 +2,14 @@ package main
 
 import "fmt"
 
+
+
+//2 different methods which depicts the difference between the function recevier and the typical function
+
 type fruit []string
 
+
+//This is function receiver which will be a method of type fruit
 
 func (f fruit) print(){
 
@@ -20,4 +26,12 @@ func (f fruit) print(){
 		fmt.Println(i,fru)
 	}
 
+}
+
+
+//Whereas this is a normal method and is not a method type fruit.
+
+func getOnPlate(f fruit, size int) fruit{
+
+	return f[:size]
 }
