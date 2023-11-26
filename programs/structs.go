@@ -39,6 +39,7 @@ func main(){
 
 	fmt.Println(apple) //price of apple will remain same even tough it is changed in basket (some weird behaviour)
 	fmt.Printf("%+v", newBasket)
+	
 }
 
 
