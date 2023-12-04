@@ -1,25 +1,21 @@
 package main
 
+func main() {
 
-func main(){
-
-	fruits := fruit{"apple","banana",newFruit()}
+	fruits := fruit{"apple", "banana", newFruit()}
 	fruits = append(fruits, "greenApple")
-	
-	fruits.print()
 
+	fruits.print()
 
 	fruitOnPlate := getOnPlate(fruits, 3)
 	fruitOnPlate.print()
 
-
-	veggies := fruit{1, 2}
+	veggies := fruit{"1", "2"}
 
 	veggies.print()
-	
 
 }
 
-func newFruit() string{
+func newFruit() string {
 	return "orange"
 }
